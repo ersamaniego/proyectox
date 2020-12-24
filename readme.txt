@@ -1,1 +1,4 @@
-hola carlos
+-Pull de submaster
+-Push a rama
+-Checkout a submaster
+-Merge desde submaster a rama
