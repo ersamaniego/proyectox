@@ -2,3 +2,4 @@
 -Push a rama
 -Checkout a submaster
 -Merge desde submaster a rama
+-Push a submaster
