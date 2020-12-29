@@ -33,6 +33,44 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+                
+                <!-- Lombok -->
+                <!-- 
+                    Project Lombok is a java library that automatically plugs into your editor and build tools,
+                    spicing up your java. Never write another getter or equals method again,
+                    with one annotation your class has a fully featured builder, 
+                    Automate your logging variables, and much more.                                 
+                -->
+                <dependency>
+                    <groupId>org.projectlombok</groupId>
+                    <artifactId>lombok</artifactId>
+                    <version>1.18.16</version>
+                        <type>jar</type>
+                </dependency>
+                
+                <!-- Spring Web / necesario para crear la restAPI. -->
+                <!-- https://mvnrepository.com/artifact/org.springframework/spring-web -->
+                <dependency>
+                    <groupId>org.springframework</groupId>
+                    <artifactId>spring-web</artifactId>
+                    <version>5.3.2</version>
+                </dependency>
+
+                <!-- Apache Tomcat -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+
+                <!-- Apache Tomcat -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-devtools</artifactId>
+			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+
+
 	</dependencies>
 
 	<build>
