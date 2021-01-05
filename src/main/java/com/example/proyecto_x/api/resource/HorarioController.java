@@ -36,12 +36,12 @@ public class HorarioController {
         return horarioRepo.findAll();
     }
     
-    @GetMapping("/traerHorarios/{id}")
-    public Optional<Horario> traerLibro(@PathVariable int id) {
+    @GetMapping("/traerHorario/{id}")
+    public Optional<Horario> traerHorario(@PathVariable int id) {
         return horarioRepo.findById(id);
     }
     
-    @DeleteMapping("/borrar/{id}")
+    @GetMapping("/borrarHorario/{id}")
     public String borrarHorario(@PathVariable int id) {
         horarioRepo.deleteById(id);
         return "Horario con ID " + id + " eliminado con éxito!";
