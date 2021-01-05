@@ -1,7 +1,11 @@
-package com.example.proyecto_x.api;
+package com.example.proyecto_x.api.resource;
 
 import java.util.List;
 import java.util.Optional;
+
+import com.example.proyecto_x.api.model.Horario;
+import com.example.proyecto_x.api.repository.HorarioRepository;
+import com.example.proyecto_x.api.service.SequenceGeneratorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -12,11 +16,17 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HorarioController {
+
+
     @Autowired
     private HorarioRepository horarioRepo;
-    
+
+    @Autowired
+    private SequenceGeneratorService service;
+
     @PostMapping("/agregarHorario")
     public String agregarHorario(@RequestBody Horario horario) {
+        horario.setId(service.generateSequence(Horario.SEQUENCE_NAME));
         horarioRepo.save(horario);
         return "Horario con ID " + horario.getId() + " agregado con éxito!";
     }
