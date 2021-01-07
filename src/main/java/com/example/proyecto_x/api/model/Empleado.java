@@ -25,6 +25,6 @@ public class Empleado {
     private int dni;
     private String contrasenia;
     private String mail;
-    private String rol;
+    private int rol;
 
 }
