@@ -27,5 +27,5 @@ public class Cliente {
     @EqualsAndHashCode.Exclude private String mail;
     @EqualsAndHashCode.Exclude private int rol;
 
-    private TarjetaPuntos tarjetaPuntos;
+    @EqualsAndHashCode.Exclude private TarjetaPuntos tarjetaPuntos;
 }
