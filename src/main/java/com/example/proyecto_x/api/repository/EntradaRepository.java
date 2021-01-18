@@ -1,10 +1,10 @@
 package com.example.proyecto_x.api.repository;
 
-import com.example.proyecto_x.api.entity.Horario;
+import com.example.proyecto_x.api.entity.Entrada;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface HorarioRepository extends MongoRepository<Horario, Integer>{
-    
+public interface EntradaRepository extends MongoRepository<Entrada, Integer> {
+
 }

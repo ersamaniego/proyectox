@@ -1,16 +1,14 @@
 package com.example.proyecto_x.api.service;
 
 
-import com.example.proyecto_x.api.model.DatabaseSequence;
+import com.example.proyecto_x.api.entity.DatabaseSequence;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.mongodb.core.FindAndModifyOptions;
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
 
-import javax.xml.crypto.Data;
 import java.util.Objects;
 
 import static org.springframework.data.mongodb.core.FindAndModifyOptions.options;

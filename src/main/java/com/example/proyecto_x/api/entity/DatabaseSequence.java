@@ -1,4 +1,4 @@
-package com.example.proyecto_x.api.model;
+package com.example.proyecto_x.api.entity;
 
 import lombok.Getter;
 import lombok.Setter;

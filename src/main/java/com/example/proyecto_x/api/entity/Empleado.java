@@ -1,8 +1,6 @@
-package com.example.proyecto_x.api.model;
+package com.example.proyecto_x.api.entity;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.annotation.Transient;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -10,7 +8,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Getter
 @Setter
 @ToString
+@EqualsAndHashCode
 
+@Data
+@AllArgsConstructor
 @Document(collection = "Empleado")
 public class Empleado {
 
@@ -18,13 +19,13 @@ public class Empleado {
     public static final String SEQUENCE_NAME = "empleados_sequence";
 
     @Id
-    private int id;
+    @EqualsAndHashCode.Exclude private int id;
 
     private String nombre;
     private String apellido;
     private int dni;
-    private String contrasenia;
-    private String mail;
-    private int rol;
+    @EqualsAndHashCode.Exclude private String contrasenia;
+    @EqualsAndHashCode.Exclude private String mail;
+    @EqualsAndHashCode.Exclude private int rol;
 
 }
