@@ -11,6 +11,7 @@ import com.example.proyecto_x.api.service.SequenceGeneratorService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin("*")
 @RestController
 @RequestMapping("/horarios")
 public class HorarioController {
