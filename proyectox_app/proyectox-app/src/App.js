@@ -51,7 +51,8 @@ export default class App extends Component{
       <div>
         <Button label="Guardar" icon="pi pi-check" onClick={this.save}/>
       </div>
-    )
+    );
+    this.toast = {};
     
   }
 
