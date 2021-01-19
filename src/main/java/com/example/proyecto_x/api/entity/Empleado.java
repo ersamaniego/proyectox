@@ -26,6 +26,6 @@ public class Empleado {
     private int dni;
     @EqualsAndHashCode.Exclude private String contrasenia;
     @EqualsAndHashCode.Exclude private String mail;
-    @EqualsAndHashCode.Exclude private int rol;
+    @EqualsAndHashCode.Exclude private Rol rol;
 
 }
